@@ -1,0 +1,120 @@
+/*------------------- common css start ----------------*/
+body {
+    font-family: 'Open Sans',sans-serif;
+}
+h1,h2,h3,h4,h5,h6,
+p,small,ul,ol,button{
+            margin: 0;
+            padding: 0;
+}
+ol,ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+/*------------------- common css end ------------------*/ 
+/*------------------- nav start ----------------*/
+#nav{   background: #02918b;   }
+
+#nav ul li a{
+        font-size: 12px;               
+        font-weight: 800;
+        text-transform: uppercase;
+        padding: 21px 25px;
+}
+#nav ul li:hover > a{
+        background-color: #cfc91d;
+        color: black;
+}
+/*------------------- nav end ------------------*/
+/*------------------- banner start ----------------*/
+#banner{
+        background: url(../img/banner_bg.jpg);
+        height: 730px ;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        z-index: 1;
+}
+#banner::after{
+        position: absolute;
+        content: '';
+        background-color: black;
+        inset: 0;
+        opacity: .6;
+        z-index: -1;
+}
+#banner .banner-contant h4{
+        font-size: 30px;
+        color: white;
+        font-weight: 400;
+}
+#banner .banner-contant h1{
+        font-size: 68px;
+        color: white;
+        font-weight: 800;    
+        letter-spacing: 25px;
+}
+#banner .banner-contant p{
+        font-size: 18px;
+        color: white;
+}
+#banner .banner-contant img{
+        display:block;
+        margin: 50px auto ;
+}
+#banner .banner-contant a{
+        font-size: 14px;
+        font-weight: 800;   
+        color: #0b1016;
+        background: #cfc91d;
+        display: inline-block;
+        padding: 19px 42px;
+}
+/*------------------- banner end ------------------*/
+/*------------------- about start ----------------*/
+#about{
+      margin: 100px 0 100px;
+}
+#about .section_info h2{
+        font-size: 46px;
+        color: #02918b;
+        font-weight: 800;
+        text-transform: uppercase;      
+}
+#about .section_info p{
+        font-size: 16px;
+        color: #7e8287;
+        line-height: 41px;
+        padding-top: 20px;         
+}
+#about .section_info p b{
+        font-size: 23px;
+        font-weight: 800;
+}
+#about .items{
+        padding-top: 80px;
+}
+#about .about_item{
+        border-right: 2px solid #7e8287;
+        padding: 50px;
+}
+#about .about_item:last-child{
+        border-right: 0;
+}
+#about .about_item i{
+        color: #02918c;
+        font-size: 35px;
+}     
+#about .about_item h3{
+        font-size: 16px;
+        font-weight: 800;
+        color: #7e8287;
+        padding: 30px 0 30px;
+}
+#about .about_item p{
+        font-size: 11px;
+        color: #7e8287;
+}
+/*------------------- about end ------------------*/  
